@@ -231,7 +231,7 @@ void IVP_Core::values_changed_recalc_redundants() {
 
 	    IVP_Contact_Point *fr_mindist;
 	    IVP_Synapse_Friction *fr_synapse;
-	    IVP_Friction_System *fs;
+	    IVP_Friction_System *fs = NULL;
 	    fr_synapse=r_obj->get_first_friction_synapse();
 	    if( fr_synapse ) {
 		fr_mindist=fr_synapse->get_contact_point();
